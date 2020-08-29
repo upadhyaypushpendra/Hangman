@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="result.css">
+</head>
+<body>
+<div class="root">
+<header id="header" class="header">
+    <div id="heading">HANGMAN</div>
+    <div>
+        <div id="scoreContainer">
+            <div>SCORE</div>
+            <div id="score">0</div>
+        </div>
+        <div id="bestScoreContainer">
+            <div>BEST</div>
+            <div id="best">0</div>
+        </div>
+        <div id="buttonContainer">
+            <button id="startButton">New Game</button>
+        </div>
+    </div>
+</header>
+<section id="canvas" class="canvas">
+    <div>
+        <img id="image" src="./images/initial.png" >
+    </div>
+    <div id="keyboard" class="keyboard">
+    </div>
+</section>
+<footer id="footer">
+    <div id="hintContainer" class="hintContainer"></div>
+    <div id="inputContainer" class="inputContainer"></div>
+</footer>
+</div>
+<div id="resultContainer" class="resultContainer" >
+    <div class="result" id="result"></div>
+    <button id="closeButton" class="closeButton">OK</button>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
