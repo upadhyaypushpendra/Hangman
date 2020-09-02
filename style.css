@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
 }
 body{
     margin: 0;
@@ -13,17 +14,16 @@ body{
     grid-template-columns: 100%;
 }
 .header{
-    z-index: 20;
+    z-index: 160;
     background: chocolate;
     font-weight: bolder;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
     box-shadow: 0 5px 10px 0 whitesmoke;
 }
 .header>div{
-    font-size: 44px;
-    width:50%;
+    font-size: 3vw;
     color:black;
     display: flex;
     flex-direction: row;
@@ -33,20 +33,18 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:25%;
     margin: 0 10px;
-    font-size: 28px;
+    font-size: 1.6vw;
 
 }
 button {
     box-shadow: 0 0 20px 5px grey;
-    align-self: stretch;
-    height: 80%;
-    border-radius: 10px;
+    border-radius: 5px;
     background: navajowhite;
-    font-size: 20px;
+    font-size: 2vw;
     font-weight: bold;
     border: 1px solid black;
+    padding: 0.3vw 2vw;
 }
 button:hover{
     cursor: pointer;
@@ -69,11 +67,10 @@ footer{
 }
 .canvas > div {
     margin:20px;
-
     height: 90%;
 }
 .keyboard{
-    width: 20%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -82,11 +79,11 @@ footer{
 }
 .button {
     cursor: pointer;
-    margin: 5px;
-    width:30px;
-    height: 30px;
+    margin: 1vh;
+    width: 4.5vh;
+    height: 4.5vh;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 1vh;
     background: transparent;
     color:navajowhite;
     display: flex;
@@ -95,7 +92,9 @@ footer{
     box-shadow: 0 0 10px 0 whitesmoke;
 }
 img {
+    border: 1px solid black;
     height: 100%;
+    width: 100%;
     box-shadow: 0 0 20px 0 whitesmoke;
 }
 .hintContainer{
@@ -106,9 +105,9 @@ img {
     background: #322d2d;
     height: 30%;
     color: wheat;
-    font-size:24px;
+    font-size: 1.5vw;
     box-shadow: 0 5px 10px 0 whitesmoke;
-    z-index: 30;
+    z-index: 10;
 }
 .inputContainer{
     justify-self: flex-end;
@@ -123,16 +122,17 @@ img {
     padding: 20px 10px 0 10px;
     width:100px;
     height: 60%;
-    font-size: 60px;
+    font-size: 4vw;
     background-color: transparent;
     color:black;
     border:none;
 }
 .char{
-    margin: 20px 10px 0 10px;
-    width:50px;
-    height: 60%;
-    font-size: 60px;
+    text-align: center;
+    margin: 0 0.5vw 0 0.5vw;
+    width:4vw;
+    min-height: 50px;
+    font-size: 4vw;
     background-color: transparent;
     color:black;
     border-width:0 0 5px 0;

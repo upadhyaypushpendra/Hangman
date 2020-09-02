@@ -12,12 +12,14 @@
     justify-content: center;
 }
 .result{
+    z-index: 40;
     font-size: 40px;
     justify-self: center;
     align-self: center;
     color:white;
 }
 .closeButton{
+    z-index: 50;
     border: 1px solid black;
     justify-self: center;
     align-self: center;
